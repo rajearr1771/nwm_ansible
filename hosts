@@ -1,0 +1,5 @@
+node01 ansible_host=52.55.135.153
+
+[appsvrs]
+node01
+

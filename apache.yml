@@ -1,0 +1,13 @@
+- hosts: appsvrs
+  tasks:
+    - name:
+      yum:
+       pkg: httpd
+       state: present
+       update_cache: true
+      become: true
+    - name: start apache
+      service:
+       name: httpd
+       state: started
+      become: true
